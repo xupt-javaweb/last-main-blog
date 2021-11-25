@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>分类</title>
+	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/me.css"/>
+</head>
+<body>
+<!-- 导航 -->
+<nav th:replace="_fragments :: menu(2)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+	<!-- 导航组件 -->
+	<div class="ui container">
+		<div class="ui inverted secondary stackable menu ">
+			<h2 class="ui teal header item">Blog</h2>
+			<a href="index.html" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+			<a href="types.html" class="active m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+			<a href="tags.html" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+			<a href="archives.html" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+			<a href="aboutme.html" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+			<div class="right m-item item m-mobile-hide">
+				<div class="ui icon input">
+					<input type="text" placeholder="Search...."/>
+					<i class="search icon"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+		<i class="sidebar icon"></i>
+	</a>
+</nav>
+<!-- 中间内容 -->
+<div class="m-container-small m-padded-tb-big">
+	<div class="ui container">
+		<!-- header -->
+		<div class="ui top attached segment">
+			<div class="ui middle aligned two column grid">
+				<div class="column">
+					<h3 class="ui teal header">分类</h3>
+				</div>
+				<div class="right aligned column">
+					共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(types)}"> 14 </h2>个
+				</div>
+			</div>
+		</div>
+		<div class="ui attached segment m-margin-top-large">
+			<div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
+				<a href="classify/fashion.html" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button " th:classappend="${type.id==activeTypeId} ? 'teal' " th:text="${type.name}">~时尚搭配~</a>
+				<div class="ui basic  letf pointing label" th:href="@{/types/{id}(id=${type.id})}" th:text="${#arrays.length(type.blogs)}">24</div>
+			</div>
+			<!--/*-->
+			<div class="ui labeled button m-margin-tb-tiny">
+				<a href="classify/time.html" class="ui basic teal button">~碎片时间~</a>
+				<div class="ui basic teal letf pointing label">22</div>
+			</div>
+			<div class="ui labeled button m-margin-tb-tiny">
+				<a href="classify/basketball.html" class="ui basic teal button ">~篮球运动~</a>
+				<div class="ui basic teal letf pointing label">14</div>
+			</div>
+			<div class="ui labeled button m-margin-tb-tiny">
+				<a href="classify/football.html" class="ui basic teal button ">~足球时刻~</a>
+				<div class="ui basic teal letf pointing label">34</div>
+			</div>
+			<div class="ui labeled button m-margin-tb-tiny">
+				<a href="classify/video.html" class="ui basic teal button ">~影视分享~</a>
+				<div class="ui basic teal letf pointing label">25</div>
+			</div>
+			<div class="ui labeled button m-margin-tb-tiny">
+				<a href="classify/food.html" class="ui basic teal button ">~美食攻略~</a>
+				<div class="ui basic teal letf pointing label">28</div>
+			</div>
+			<div class="ui labeled button m-margin-tb-tiny">
+				<a href="classify/anime.html" class="ui basic teal button ">~宝藏漫画~</a>
+				<div class="ui basic teal letf pointing label">32</div>
+			</div>
+			<div class="ui labeled button m-margin-tb-tiny">
+				<a href="classify/militaryScience.html" class="ui basic teal button ">~军事科技~</a>
+				<div class="ui basic teal letf pointing label">16</div>
+			</div>
+			<div class="ui labeled button m-margin-tb-tiny">
+				<a href="classify/history.html" class="ui basic teal button ">~历史战争~</a>
+				<div class="ui basic teal letf pointing label">23</div>
+			</div>
+			<div class="ui labeled button m-margin-tb-tiny">
+				<a href="classify/es.html" class="ui basic teal button ">~电子竞技~</a>
+				<div class="ui basic teal letf pointing label">14</div>
+			</div>
+			<!--*/-->
+		</div>
+
+		<div class="ui top teal attached segment">
+			<!--/*-->
+			<div class="ui vertical padded segment m-padded-tb-large m-mobile-lr-clear">
+				<div class="ui mobile reversed stackable grid">
+					<!-- 左边博客列表 -->
+					<div class="eleven wide column">
+						<h3 class="ui header">时尚搭配的紧身牛仔裤，提升时尚感，真是最佳时尚单品！</h3>
+						<p class="m-text">好看的身材自然是需要好看的衣服来修饰，牛仔裤依旧是永恒不变的时尚，搭配起来总是那么美，那么吸引人，所以才会一直到现在流行了几百年，久盛不衰...</p>
+						<div class="ui stackable grid">
+							<div class="eleven wide column">
+								<div class="ui mini horizontal link list">
+									<div class="item">
+										<img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+										<div class="content"><a href="#" class="header">张嘉祺</a></div>
+									</div>
+									<div class="item">
+										<i class="calendar icon"></i>2021-08-29
+									</div>
+									<div class="item">
+										<i class="eye icon"></i>15
+									</div>
+								</div>
+							</div>
+							<div class="right aligned five wide column">
+								<a href="#" target="_blank" class="ui teal basic label m-padded-tiny">时尚搭配</a>
+							</div>
+						</div>
+					</div>
+					<!-- 图片 -->
+					<div class="five wide column">
+						<a href="#" target="_blank">
+							<img src="https://picsum.photos/id/239/800/450" alt="" class="ui rounded image">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="ui vertical padded segment m-padded-tb-large m-mobile-lr-clear">
+				<div class="ui mobile reversed stackable grid">
+					<!-- 左边博客列表 -->
+					<div class="eleven wide column">
+						<h3 class="ui header">市场监管总局就医疗美容广告执法指南公开征求意见</h3>
+						<p class="m-text">8月27日，市场监管总局依照《广告法》《医疗广告管理办法》等法律法规规章规定，研究起草了《医疗美容广告执法指南（征求意见稿）》，现向社会公开...</p>
+						<div class="ui stackable grid">
+							<div class="eleven wide column">
+								<div class="ui mini horizontal link list">
+									<div class="item">
+										<img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+										<div class="content"><a href="#" class="header">张嘉祺</a></div>
+									</div>
+									<div class="item">
+										<i class="calendar icon"></i>2021-08-29
+									</div>
+									<div class="item">
+										<i class="eye icon"></i>15
+									</div>
+								</div>
+							</div>
+							<div class="right aligned five wide column">
+								<a href="#" target="_blank" class="ui teal basic label m-padded-tiny">医疗美容</a>
+							</div>
+						</div>
+					</div>
+					<!-- 图片 -->
+					<div class="five wide column">
+						<a href="#" target="_blank">
+							<img src="https://picsum.photos/id/240/800/450" alt="" class="ui rounded image">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="ui vertical padded segment m-padded-tb-large m-mobile-lr-clear">
+				<div class="ui mobile reversed stackable grid">
+					<!-- 左边博客列表 -->
+					<div class="eleven wide column">
+						<h3 class="ui header">如何有效抗老？科学护肤秘籍来了！</h3>
+						<p class="m-text">是不是有很多的集美们，跟我一样一度处于护肤迷茫期，家里一堆产品却不知道怎么使用，这钱砸在脸上咋就没用？如何有效护肤？有效抗老？我们的护肤流...</p>
+						<div class="ui stackable grid">
+							<div class="eleven wide column">
+								<div class="ui mini horizontal link list">
+									<div class="item">
+										<img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+										<div class="content"><a href="#" class="header">张嘉祺</a></div>
+									</div>
+									<div class="item">
+										<i class="calendar icon"></i>2021-08-29
+									</div>
+									<div class="item">
+										<i class="eye icon"></i>15
+									</div>
+								</div>
+							</div>
+							<div class="right aligned five wide column">
+								<a href="#" target="_blank" class="ui teal basic label m-padded-tiny">护肤秘籍</a>
+							</div>
+						</div>
+					</div>
+					<!-- 图片 -->
+					<div class="five wide column">
+						<a href="#" target="_blank">
+							<img src="https://picsum.photos/id/241/800/450" alt="" class="ui rounded image">
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--*/-->
+			<div class="ui vertical padded segment m-padded-tb-large m-mobile-lr-clear">
+				<div class="ui vertical padded segment m-padded-tb-large m-mobile-lr-clear" th:each="blog : ${page.content}">
+					<div class="ui mobile reversed stackable grid">
+						<!-- 左边博客列表 -->
+						<div class="eleven wide column">
+							<h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" th:text="${blog.title}" target="_blank">迟来的中秋开箱</a></h3>
+							<p class="m-text" th:text="|${blog.description}......|">回家陪父母过了一个中秋，空了闲拍了中秋礼盒
+								🥚野兽派十周年扭蛋机，野兽派也太会了！
+								每旋转一次都会有有不同的惊喜，可以和亲人一块体验盲盒的快乐...</p>
+							<div class="ui stackable grid">
+								<div class="row">
+									<div class="eleven wide column">
+										<div class="ui mini horizontal link list">
+											<div class="item">
+												<img src="https://picsum.photos/100/100" th:src="@{${blog.user.avatar}}" class="ui avatar image"></img>
+												<div class="content"><a href="#" class="header" th:text="${blog.user.nickname}">成笑莹</a></div>
+											</div>
+											<div class="item">
+												<i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2021-08-29</span>
+											</div>
+											<div class="item">
+												<i class="eye icon"></i><span th:text="${blog.views}">15</span>
+											</div>
+										</div>
+									</div>
+									<div class="right aligned five wide column">
+										<a href="#" target="_blank" class="ui teal basic label m-padded-tiny" th:text="${blog.type.name}">节日假期</a>
+									</div>
+								</div>
+<!--								<div class="row">-->
+<!--									<div class="column">-->
+<!--										<a  href="#" class="ui m-padded-mini m-text-thin basic teal left pointing label">中秋节</a>-->
+<!--									</div>-->
+<!--								</div>-->
+							</div>
+						</div>
+						<!-- 图片 -->
+						<div class="five wide column">
+							<a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
+								<img src="https://picsum.photos/id/237/800/450" th:src="@{${blog.firstPicture}}" alt="" class="ui rounded image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/*-->
+			<div class="ui vertical padded segment m-padded-tb-large m-mobile-lr-clear">
+				<div class="ui mobile reversed stackable grid">
+					<!-- 左边博客列表 -->
+					<div class="eleven wide column">
+						<h3 class="ui header">不断迭代的算法与编程技术，正驱动少年向上发展</h3>
+						<p class="m-text">人类的进化、发展,是一个充分挖掘大脑潜力来改变世界的过程。在这其中,互联网技术极大地推动了时代的发展,而信息技术正逐渐成为影响社会发展的重要基础...</p>
+						<div class="ui stackable grid">
+							<div class="eleven wide column">
+								<div class="ui mini horizontal link list">
+									<div class="item">
+										<img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+										<div class="content"><a href="#" class="header">张嘉祺</a></div>
+									</div>
+									<div class="item">
+										<i class="calendar icon"></i>2021-08-29
+									</div>
+									<div class="item">
+										<i class="eye icon"></i>15
+									</div>
+								</div>
+							</div>
+							<div class="right aligned five wide column">
+								<a href="#" target="_blank" class="ui teal basic label m-padded-tiny">编程技术</a>
+							</div>
+						</div>
+					</div>
+					<!-- 图片 -->
+					<div class="five wide column">
+						<a href="#" target="_blank">
+							<img src="https://picsum.photos/id/243/800/450" alt="" class="ui rounded image">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="ui vertical padded segment m-padded-tb-large m-mobile-lr-clear">
+				<div class="ui mobile reversed stackable grid">
+					<!-- 左边博客列表 -->
+					<div class="eleven wide column">
+						<h3 class="ui header">双节美食攻略！医学生带你不出校吃大餐！</h3>
+						<p class="m-text">正所谓“民以食为天”，来到新的校园，寻觅美食对干饭人自然是重要大事！要问学校有些觅食之处？有哪些宝藏美食？那可多啦！枫林甜品妙，张江鱼粉绝；...</p>
+						<div class="ui stackable grid">
+							<div class="eleven wide column">
+								<div class="ui mini horizontal link list">
+									<div class="item">
+										<img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+										<div class="content"><a href="#" class="header">张嘉祺</a></div>
+									</div>
+									<div class="item">
+										<i class="calendar icon"></i>2021-08-29
+									</div>
+									<div class="item">
+										<i class="eye icon"></i>15
+									</div>
+								</div>
+							</div>
+							<div class="right aligned five wide column">
+								<a href="#" target="_blank" class="ui teal basic label m-padded-tiny">美食攻略</a>
+							</div>
+						</div>
+					</div>
+					<!-- 图片 -->
+					<div class="five wide column">
+						<a href="#" target="_blank">
+							<img src="https://picsum.photos/id/244/800/450" alt="" class="ui rounded image">
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--*/-->
+		</div>
+		<!-- footer -->
+		<div class="ui bottom attached segment" th:if="${page.totalPages}>1">
+			<div class="ui middle aligned two column grid">
+				<div class="column">
+					<a href="#" th:href="@{/(page=${page.number}-1)}" th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
+				</div>
+				<div class="right aligned column">
+					<a href="#" th:href="@{/(page=${page.number}+1)}" th:unless="${page.last}" class="ui mini teal basic button">下一页</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--底部footer-->
+<footer  th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+	<div class="ui container">
+		<div class="ui inverted divided stackable grid">
+			<div class="three wide column">
+				<input type="image" src="../static/images/二维码.jpg" th:src="@{/images/二维码.jpg}" class="ui rounded image" style="width: 110px;"/>
+			</div>
+			<div class="three wide column">
+				<h4 class="ui inverted header m-text-spaced">最新博客</h4>
+				<div class="ui inverted link list">
+					<a href="#" class="item">你真的理解什么是财富自由吗？</a>
+					<a href="#" class="item">Java常见设计模式总结</a>
+					<a href="#" class="item">开源的物联网平台</a>
+					<a href="#" class="item">Git学习——Git基本工作原理</a>
+				</div>
+			</div>
+			<div class="three wide column">
+				<h4 class="ui inverted header m-text-spaced">联系我们</h4>
+				<div class="ui inverted link list">
+					<a href="#" class="item">微信：714479723</a>
+					<a href="#" class="item">QQ：714479723</a>
+					<a href="#" class="item">手机号码：18791307612</a>
+				</div>
+			</div>
+			<div class="seven wide column">
+				<h4 class="ui inverted header m-text-spaced">Blog</h4>
+				<p class="m-text-thin  m-opacity-mini" >这是我们的官方博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助</p>
+			</div>
+		</div>
+		<div class="ui inverted section divider"></div>
+		<p class="m-text-thin m-text-spaced m-opacity-mini">Copyright@2021 8.29</p>
+	</div>
+</footer>
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+<script type="text/javascript">
+	$('.menu.toggle').click(function(){
+		$('.m-item').toggleClass('m-mobile-hide');
+	});
+
+
+</script>
+</body>
+</html>

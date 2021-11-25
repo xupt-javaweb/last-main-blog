@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/me.css" />
+</head>
+<body>
+    <!-- 导航 -->
+    <nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <!-- 导航组件 -->
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu ">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="index.html" class="active m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="types.html" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="tags.html" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="archives.html" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+                <a href="aboutme.html" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search...." />
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!--中间内容-->
+    <div class="m-container m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <!-- 左边的博客列表 -->
+                <div class="eleven wide column">
+                    <!--header-->
+                    <div class="ui top attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <h3 class="ui teal header">博客</h3>
+                            </div>
+                            <div class="right aligned column">
+                                共
+                                <h2 class="ui orange header m-inline-block m-text-thin"> 4 </h2>篇
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="ui attached  segment">
+
+
+
+                        <div class="ui vertical padded segment m-padded-tb-large">
+                            <div class="ui mobile reversed stackable grid">
+                                <!-- 左边博客列表 -->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">怎样做披萨？</h3>
+                                    <p class="m-text">比萨起源于意大利，传统的意大利比萨饼底是薄底、脆皮，上面的配料不会超过 3 种，也不一定加奶酪，吃的是面饼的自然香味，比较像抹了番茄酱的大饼。 在我国更常见的是美式比萨，饼底稍厚，上面的配料五彩缤纷，蔬菜、肉类应有尽有，还有标志性的拉丝奶酪，是特别适合朋友聚会时享用的「大菜」...
+                                    </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="img/lufei.jpg" class="ui avatar image"></img>
+                                                    <div class="content"><a href="#" class="header">钱璞玉</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2021-09-01
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>788
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">谈谈美食</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="img/f1.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="ui vertical padded segment m-padded-tb-large">
+                            <div class="ui mobile reversed stackable grid">
+                                <!-- 左边博客列表 -->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">鸡腿这么做最解馋，没人能拒绝...吧</h3>
+                                    <p class="m-text">夏天下班后最大的期待，莫过于回家换上睡衣，踱到冰箱前摸出一罐冰啤酒，再掏出一碟超入味的卤菜，抱着电脑打游戏或者看剧。卤菜里最让我挂念的就是那只卤鸡腿。鸡皮弹牙有嚼劲，还闪着油光；鸡腿肉嫩滑入味，用牙轻轻一撕就脱骨。最妙的是关节处的软骨，嫩嫩脆脆，咬起来特别爽...</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="img/lufei.jpg" class="ui avatar image"></img>
+                                                    <div class="content"><a href="#" class="header">钱璞玉</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2021-07-30
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>999+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">谈谈美食</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="img/f2.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="ui vertical padded segment m-padded-tb-large">
+                            <div class="ui mobile reversed stackable grid">
+                                <!-- 左边博客列表 -->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">巧克力控来吧！巧克力蛋糕</h3>
+                                    <p class="m-text">
+                                        布朗尼是美国常见的点心，通常配以咖啡、牛奶，外层有饼干的松脆，里面又有蛋糕的松软，浓郁的巧克力味让人无比满足。美式经典布朗尼蛋糕是做法最简单的蛋糕之一，也是美国第一批被做成蛋糕预拌粉的蛋糕品种之一，家庭主妇们只需要添加水份，油脂和鸡蛋，和预拌粉搅拌均匀即可烤制出好吃的布朗尼，足见它的简单程度...
+                                    </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="img/lufei.jpg" class="ui avatar image"></img>
+                                                    <div class="content"><a href="#" class="header">钱璞玉</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2021-08-15
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>323
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">谈谈美食</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="img/f3.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="ui vertical padded segment m-padded-tb-large">
+                            <div class="ui mobile reversed stackable grid">
+                                <!-- 左边博客列表 -->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">如何合理安排一天水果量和吃水果时间？</h3>
+                                    <p class="m-text">多吃水果对身体有益，无论是流行病学研究，或临床干预研究都发现水果改善各种健康问题，除了维生素C和膳食纤维外，水果含的多酚类抗氧化物，是我们日常食物中最无法取代的。高果糖的水果例如芒果，适量食用同样对改善健康有帮助，但过量的高果糖水果可能就适得其反了，大家需要注意了...
+
+
+                                    </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="img/lufei.jpg" class="ui avatar image"></img>
+                                                    <div class="content"><a href="#" class="header">钱璞玉</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2021-04-18
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>666
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">谈谈美食</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="img/f4.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- footer -->
+                    <div class="ui bottom attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <a href="#" class="ui mini teal basic button">上一页</a>
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" class="ui mini teal basic button">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右边的top -->
+                <div class="five wide column">
+                    <!-- 分类 -->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>分类
+                                </div>
+                                <div class="column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <div class="ui vertical menu">
+                                <a href="#" class="item">
+								学习日志
+								<div class="ui teal basic left pointing label">27</div>
+							</a>
+                                <a href="#" class="item">
+								生活感悟
+								<div class="ui teal basic left pointing label">23</div>
+							</a>
+                                <a href="#" class="item">
+								碎片时间
+								<div class="ui teal basic left pointing label">19</div>
+							</a>
+                                <a href="#" class="item">
+								编程技术
+								<div class="ui teal basic left pointing label">22</div>
+							</a>
+                                <a href="#" class="item">
+								美食分享
+								<div class="ui teal basic left pointing label">13</div>
+							</a>
+                                <a href="#" class="item">
+								节日假期
+								<div class="ui teal basic left pointing label">12</div>
+							</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 标签 -->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>标签
+                                </div>
+                                <div class="column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							中秋节 <div class="detail">13</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							方法论 <div class="detail">12</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							幸福感 <div class="detail">14</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							慢生活 <div class="detail">13</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							面试题 <div class="detail">18</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							Java <div class="detail">16</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							数据库 <div class="detail">13</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							机器学习 <div class="detail">20</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							JVM <div class="detail">13</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							前端 <div class="detail">12</div>
+						</a>
+                        </div>
+                        <!-- 最新推荐 -->
+                    </div>
+                    <!-- 最新推荐 -->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="secondary segment">
+                            <i class="bookmark icon"></i>最新推荐
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black m-text-thin">关于刻意练习的清单</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black">Java常见设计模式总结</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black">开源的物联网平台</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black">Git学习——Git基本工作原理</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black">拒绝内卷从我做起</a>
+                        </div>
+                    </div>
+                    <!-- 二维码 -->
+                    <h4 class="ui horizontal divider header">扫码联系我们</h4>
+                    <div class="ui centered card" style="width: 11em">
+                        <img src="../../static/images/二维码.jpg" th:src="@{/images/二维码.jpg}" class="ui rounded image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部footer-->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <input type="image" src="../../static/images/二维码.jpg" th:src="@{/images/二维码.jpg}" class="ui rounded image" style="width: 110px;" />
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">你真的理解什么是财富自由吗？</a>
+                        <a href="#" class="item">Java常见设计模式总结</a>
+                        <a href="#" class="item">开源的物联网平台</a>
+                        <a href="#" class="item">Git学习——Git基本工作原理</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-spaced">联系我们</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">微信：714479723</a>
+                        <a href="#" class="item">QQ：714479723</a>
+                        <a href="#" class="item">手机号码：18791307612</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-spaced">Blog</h4>
+                    <p class="m-text-thin  m-opacity-mini">这是我们的官方博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright@2021 8.29</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+
+</html>

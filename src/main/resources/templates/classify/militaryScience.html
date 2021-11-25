@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>军事科技</title>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/me.css"/>
+</head>
+<body>
+<!-- 导航 -->
+<nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+    <!-- 导航组件 -->
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu ">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="index.html" class="active m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="types.html" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="tags.html" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="archives.html" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <a href="aboutme.html" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search...."/>
+                    <i class="search icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+<!--中间内容-->
+<div class="m-container m-padded-tb-large">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!-- 左边的博客列表 -->
+            <div class="eleven wide column">
+                <!--header-->
+                <div class="ui top attached segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <h3 class="ui teal header">军事科技</h3>
+                        </div>
+                        <div class="right aligned column">
+                            共 <h2 class="ui orange header m-inline-block m-text-thin"> 6 </h2>篇
+                        </div>
+                    </div>
+                </div>
+                <!-- content -->
+                <div class="ui attached  segment">
+                    <div class="ui vertical padded segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+                            <!-- 左边博客列表 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">中国兵器“硬核”参展阵容公开</h3>
+                                <p class="m-text">&nbsp;&nbsp;&nbsp;&nbsp;以VT4为代表的主战坦克、以8×8 105毫米突击炮为代表的轮式装甲车、以VN17为代表的履带式步兵战车、以VN16为代表的两栖装甲车、以VP11为代表的战术车辆将盛装亮相，具有国际先进水平的新一代6×6轮式装甲车将在本届航展上首次发布。该领域产品拥有强大的武器系统、良好的越野机动性、先进的信息系统，具有跑的快、打的准、防的住、信息化智能化程度高等特点。</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+                                                <div class="content"><a href="#" class="header">张嘉祺</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2021-09-27
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i>12
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">军事科技</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 图片 -->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://n.sinaimg.cn/mil/crawl/101/w550h351/20210926/6f4e-698649f27dcebf0647663b2c8f494013.jpg" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="ui vertical padded segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+                            <!-- 左边博客列表 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">智能弹药</h3>
+                                <p class="m-text">&nbsp;&nbsp;&nbsp;&nbsp;针对不同平台、采用不同制导模式和战斗部的反坦克导弹、空地导弹、航空炸弹、末敏弹、巡飞弹等系列化产品将在智能弹药体系集中展示。红箭9A反坦克导弹将展示其最新改进成果，蓝箭5导弹将展示其适配不同平台、采用不同制导模式以及其“打了不管”的突出特点。本届航展展示的巡飞弹系列化产品更加完善，作战能力更加突出。</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+                                                <div class="content"><a href="#" class="header">李仁密</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2021-09-27
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i>320
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">军事科技</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 图片 -->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://n.sinaimg.cn/mil/crawl/163/w550h413/20210926/6661-712a23f225c9c03b550a3690106c3412.jpg" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="ui vertical padded segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+                            <!-- 左边博客列表 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">防空反导</h3>
+                                <p class="m-text">&nbsp;&nbsp;&nbsp;&nbsp;中低空和超低空防空反导为核心的中近程防空导弹系统、自行高炮系统、弹炮结合防空系统及反无人机解决方案，具有射程衔接、空域覆盖、导弹为主、弹炮结合、软硬杀伤等突出特点。包括天龙100/天龙50/天龙30防空导弹系统、陆盾76防空高炮武器系统等在内的防空反导装备将集中展示，区域防空指挥中心将以最新形态展示防空反导指挥作战能力，反无人机综合解决方案展示了针对不同类型无人机的多样化反击能力。</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+                                                <div class="content"><a href="#" class="header">张嘉祺</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2021-09-27
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i>316
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">军事科技</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 图片 -->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://n.sinaimg.cn/mil/crawl/484/w550h734/20210926/79b0-c950aa7640df190911b7c96b2f1b77e7.jpg" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="ui vertical padded segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+                            <!-- 左边博客列表 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">无人装备</h3>
+                                <p class="m-text">&nbsp;&nbsp;&nbsp;&nbsp;聚焦陆军无人装备和有人无人协同作战应用，展示兵器工业集团近年来无人装备领域最新发展成果和技术优势。技术日益成熟、配套载荷日益完善的金雕500A无人直升机将充分展示其协同与独立作战能力；金雕150B蜂群无人机将挂载多种类型任务载荷展示其集群作战能力；具有独立与协同实战能力的多款无人车将参加本届航展。</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+                                                <div class="content"><a href="#" class="header">张嘉祺</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2021-09-27
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i>14
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">军事科技</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 图片 -->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://n.sinaimg.cn/mil/crawl/163/w550h413/20210926/f514-4e75030d88228e09e1164fb675bb42e1.jpg" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui vertical padded segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+                            <!-- 左边博客列表 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">非传统安全&军工军技合作领域</h3>
+                                <p class="m-text">&nbsp;&nbsp;&nbsp;&nbsp;非传统安全领域，主要体现兵器工业集团北斗应用的全产业链体系化国家能力，重点展示北斗时空信息服务体系及其军事应用，同时展示智能化和数字化的城市安全和边境安全综合解决方案。</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+                                                <div class="content"><a href="#" class="header">张嘉祺</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2021-09-27
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i>27
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">军事科技</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 图片 -->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://n.sinaimg.cn/mil/crawl/107/w550h357/20210926/3b31-a2b01a43c63334bb7b142723277cd227.jpg" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="ui vertical padded segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+                            <!-- 左边博客列表 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">军工军技展</h3>
+                                <p class="m-text">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;军工军技合作领域，兵器工业集团致力于成为全球国防科技工业能力建设的可靠合作伙伴，本届航展将以互动沙盘形式，通过装备先进制造、深度维修及升级改造，中小口径弹药自动化生产线以及军事工程解决方案等多要素演示，展示集团公司先进工业体系和能力。</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/100/100" class="ui avatar image"></img>
+                                                <div class="content"><a href="#" class="header">张嘉祺</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2021-09-27
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i>16
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">军事科技</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 图片 -->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://n.sinaimg.cn/mil/crawl/163/w550h413/20210926/02fd-aee17acd8c28368e0871fa2d3d6112f0.jpg" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!-- footer -->
+                <div class="ui bottom attached segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <a href="#" class="ui mini teal basic button">上一页</a>
+                        </div>
+                        <div class="right aligned column">
+                            <a href="#" class="ui mini teal basic button">下一页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右边的top -->
+            <div class="five wide column">
+                <!-- 分类 -->
+                <div class="ui segments m-margin-top-large">
+                    <div class="secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="idea icon"></i>分类
+                            </div>
+                            <div class="column">
+                                <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <div class="ui vertical menu">
+                            <a href="#" class="item">
+                                学习日志
+                                <div class="ui teal basic left pointing label">27</div>
+                            </a>
+                            <a href="#" class="item">
+                                生活感悟
+                                <div class="ui teal basic left pointing label">23</div>
+                            </a>
+                            <a href="#" class="item">
+                                碎片时间
+                                <div class="ui teal basic left pointing label">19</div>
+                            </a>
+                            <a href="#" class="item">
+                                编程技术
+                                <div class="ui teal basic left pointing label">22</div>
+                            </a>
+                            <a href="#" class="item">
+                                美食分享
+                                <div class="ui teal basic left pointing label">13</div>
+                            </a>
+                            <a href="#" class="item">
+                                节日假期
+                                <div class="ui teal basic left pointing label">12</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 标签 -->
+                <div class="ui segments m-margin-top-large">
+                    <div class="secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="idea icon"></i>标签
+                            </div>
+                            <div class="column">
+                                <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            中秋节 <div class="detail">13</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            方法论 <div class="detail">12</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            幸福感 <div class="detail">14</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            慢生活 <div class="detail">13</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            面试题 <div class="detail">18</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            Java <div class="detail">16</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            数据库 <div class="detail">13</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            机器学习 <div class="detail">20</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            JVM <div class="detail">13</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            前端 <div class="detail">12</div>
+                        </a>
+                    </div>
+                    <!-- 最新推荐 -->
+                </div>
+                <!-- 最新推荐 -->
+                <div class="ui segments m-margin-top-large">
+                    <div class="secondary segment">
+                        <i class="bookmark icon"></i>最新推荐
+                    </div>
+                    <div class="ui segment">
+                        <a href="#"target="_blank m-black m-text-thin">关于刻意练习的清单</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#"target="_blank m-black">Java常见设计模式总结</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#"target="_blank m-black">开源的物联网平台</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#"target="_blank m-black">Git学习——Git基本工作原理</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#"target="_blank m-black">拒绝内卷从我做起</a>
+                    </div>
+                </div>
+                <!-- 二维码 -->
+                <h4 class="ui horizontal divider header">扫码联系我们</h4>
+                <div class="ui centered card" style="width: 11em">
+                    <img src="../../static/images/二维码.jpg" th:src="@{/images/二维码.jpg}" class="ui rounded image" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部footer-->
+<footer  th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <input type="image" src="../../static/images/二维码.jpg" th:src="@{/images/二维码.jpg}" class="ui rounded image" style="width: 110px;"/>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-spaced">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">你真的理解什么是财富自由吗？</a>
+                    <a href="#" class="item">Java常见设计模式总结</a>
+                    <a href="#" class="item">开源的物联网平台</a>
+                    <a href="#" class="item">Git学习——Git基本工作原理</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-spaced">联系我们</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">微信：714479723</a>
+                    <a href="#" class="item">QQ：714479723</a>
+                    <a href="#" class="item">手机号码：18791307612</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-spaced">Blog</h4>
+                <p class="m-text-thin  m-opacity-mini" >这是我们的官方博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright@2021 8.29</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.w3.org/1999/xhtml">
+
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/me.css" />
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <!-- 导航组件 -->
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu ">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="index.html" class="active m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="types.html" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="tags.html" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="archives.html" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+                <a href="aboutme.html" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search...." />
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!--中间内容-->
+    <div class="m-container m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <!-- 左边的博客列表 -->
+                <div class="eleven wide column">
+                    <!--header-->
+                    <div class="ui top attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <h3 class="ui teal header">博客</h3>
+                            </div>
+                            <div class="right aligned column">
+                                共
+                                <h2 class="ui orange header m-inline-block m-text-thin"> 4 </h2>篇
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="ui attached  segment">
+
+
+
+                        <div class="ui vertical padded segment m-padded-tb-large">
+                            <div class="ui mobile reversed stackable grid">
+                                <!-- 左边博客列表 -->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">王者敦煌新皮肤 | 王者荣耀x敦煌研究院第三季预热海报今日发布！</h3>
+                                    <p class="m-text">她曾走过驼铃悠扬的丝绸之路，自西域来到盛世长安它曾历经千年风沙的漫长岁月，跨越时空与我们相见
+                                    </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="img/lufei.jpg" class="ui avatar image"></img>
+                                                    <div class="content"><a href="#" class="header">成笑莹</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2021-09-01
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>788
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">电竞赛事</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="img/006.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="ui vertical padded segment m-padded-tb-large">
+                            <div class="ui mobile reversed stackable grid">
+                                <!-- 左边博客列表 -->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">S25赛季巅峰赛出场率最高边路，吕布上分细节分享</h3>
+                                    <p class="m-text">吕布已成S25赛季巅峰赛出场率最高边路，且大部分玩家均选择黄刀边惩流，今天小黄人将与大家分享吕布的上分细节黄刀边惩流的好处是移速更高（二级黄刀+5%移速；...</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="img/lufei.jpg" class="ui avatar image"></img>
+                                                    <div class="content"><a href="#" class="header">成笑莹</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2021-07-30
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>999+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">电竞赛事</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="img/007.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="ui vertical padded segment m-padded-tb-large">
+                            <div class="ui mobile reversed stackable grid">
+                                <!-- 左边博客列表 -->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">十四位射手精准系数测试报告，新版寒霜袭侵适用英雄解读！</h3>
+                                    <p class="m-text">
+                                        S25赛季寒霜袭侵进行了改版调整，新增精准被动可以提高120点普攻伤害，让寒霜袭侵这件装备更加适合射手和普攻型战士。​​新版寒霜袭侵到底适合哪些英雄使用呢？今天就带大家全面探究寒霜袭侵以及精准被动的机制设...
+                                    </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="img/lufei.jpg" class="ui avatar image"></img>
+                                                    <div class="content"><a href="#" class="header">成笑莹</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2021-08-15
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>323
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">游戏赛事</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="img/008.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="ui vertical padded segment m-padded-tb-large">
+                            <div class="ui mobile reversed stackable grid">
+                                <!-- 左边博客列表 -->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">伽罗上线峡谷三周年，一诺胜率最高，大家都记得那些伽罗的高光？</h3>
+                                    <p class="m-text">今天是伽罗上线王者峡谷三周年纪念日伽罗在KPL登场共234局，胜率54.7%KPL首位使用伽罗的选手是BA居居KPL使用伽罗最多的选手是广州TTG丶钎城KPL使用伽罗胜率最高的选手是AG一诺（PS：选手胜率仅统计使用伽罗≥5局的选手）... </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="img/lufei.jpg" class="ui avatar image"></img>
+                                                    <div class="content"><a href="#" class="header">成笑莹</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2021-04-18
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>666
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny">游戏赛事</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="img/009.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- footer -->
+                    <div class="ui bottom attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <a href="#" class="ui mini teal basic button">上一页</a>
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" class="ui mini teal basic button">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右边的top -->
+                <div class="five wide column">
+                    <!-- 分类 -->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>分类
+                                </div>
+                                <div class="column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <div class="ui vertical menu">
+                                <a href="#" class="item">
+								学习日志
+								<div class="ui teal basic left pointing label">27</div>
+							</a>
+                                <a href="#" class="item">
+								生活感悟
+								<div class="ui teal basic left pointing label">23</div>
+							</a>
+                                <a href="#" class="item">
+								碎片时间
+								<div class="ui teal basic left pointing label">19</div>
+							</a>
+                                <a href="#" class="item">
+								编程技术
+								<div class="ui teal basic left pointing label">22</div>
+							</a>
+                                <a href="#" class="item">
+								美食分享
+								<div class="ui teal basic left pointing label">13</div>
+							</a>
+                                <a href="#" class="item">
+								节日假期
+								<div class="ui teal basic left pointing label">12</div>
+							</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 标签 -->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>标签
+                                </div>
+                                <div class="column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							中秋节 <div class="detail">13</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							方法论 <div class="detail">12</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							幸福感 <div class="detail">14</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							慢生活 <div class="detail">13</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							面试题 <div class="detail">18</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							Java <div class="detail">16</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							数据库 <div class="detail">13</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							机器学习 <div class="detail">20</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							JVM <div class="detail">13</div>
+						</a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+							前端 <div class="detail">12</div>
+						</a>
+                        </div>
+                        <!-- 最新推荐 -->
+                    </div>
+                    <!-- 最新推荐 -->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="secondary segment">
+                            <i class="bookmark icon"></i>最新推荐
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black m-text-thin">关于刻意练习的清单</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black">Java常见设计模式总结</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black">开源的物联网平台</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black">Git学习——Git基本工作原理</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank m-black">拒绝内卷从我做起</a>
+                        </div>
+                    </div>
+                    <!-- 二维码 -->
+                    <h4 class="ui horizontal divider header">扫码联系我们</h4>
+                    <div class="ui centered card" style="width: 11em">
+                        <img src="../../static/images/二维码.jpg" th:src="@{/images/二维码.jpg}" class="ui rounded image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部footer-->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <input type="image" src="../../static/images/二维码.jpg" th:src="@{/images/二维码.jpg}" class="ui rounded image" style="width: 110px;" />
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">你真的理解什么是财富自由吗？</a>
+                        <a href="#" class="item">Java常见设计模式总结</a>
+                        <a href="#" class="item">开源的物联网平台</a>
+                        <a href="#" class="item">Git学习——Git基本工作原理</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-spaced">联系我们</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">微信：714479723</a>
+                        <a href="#" class="item">QQ：714479723</a>
+                        <a href="#" class="item">手机号码：18791307612</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-spaced">Blog</h4>
+                    <p class="m-text-thin  m-opacity-mini">这是我们的官方博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright@2021 8.29</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+
+</html>
