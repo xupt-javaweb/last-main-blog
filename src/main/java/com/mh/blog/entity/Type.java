@@ -19,7 +19,7 @@ import java.util.List;
 @Data
 @Entity/*具备与数据库对应生成表的能力*/
 @Table(name = "t_type")
-public class Type implements Serializable {
+public class Type  {
 
     @Id
     @GeneratedValue/*主键的生成策略*/

@@ -32,7 +32,7 @@
     </div>
     <!-- 登录页面 -->
     <div class="form-container sign-in-container">
-        <form method="post" action="#" th:action="@{/admin/login}">
+        <form method="post" action="#" th:action="@{/admin/login}" id="login-form">
             <h2>sign in</h2>
             <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-qq"></i></a>
@@ -87,7 +87,7 @@
         container.classList.remove("active");
     }
 
-    $('.ui.form').form({
+    $('#login-form').form({
         fields:{
             username : {
                 identifier: 'username',

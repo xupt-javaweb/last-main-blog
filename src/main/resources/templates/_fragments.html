@@ -14,13 +14,10 @@
     <link rel="stylesheet" type="text/css" href="../static/lib/player/css/index.css" th:href="@{/lib/player/css/index.css}">
     <link rel="stylesheet" type="text/css" href="../static/lib/tempSearch/reset.css" th:href="@{/lib/tempSearch/reset.css}"/>
     <link rel="stylesheet" type="text/css" href="../static/lib/tempSearch/index.css" th:href="@{/lib/tempSearch/index.css}"/>
-<!--    <link rel="stylesheet" type="text/css" href="../static/lib/picture/css/bootstrap.min.css" th:href="@{/lib/picture/css/bootstrap.min.css}">-->
-<!--    <link rel="stylesheet" type="text/css" href="../static/lib/picture/css/screen.css" th:href="@{/lib/picture/css/screen.css}">-->
-<!--    <link rel="stylesheet" type="text/css" href="../static/lib/picture/css/ma5gallery.css" th:href="@{/lib/picture/css/ma5gallery.css}" >-->
 </head>
 <body>
 <!-- 导航 -->
-<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small animated bounceInDown">
     <!-- 导航组件 -->
     <div class="ui container">
         <div class="ui inverted secondary stackable menu ">
@@ -30,9 +27,9 @@
             <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
             <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
             <a href="#" th:href="@{/aboutme}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
-            <a href="#" th:href="@{/tempSearch}" class="m-item item m-mobile-hide" th:classappend="${n==6} ? active"><i class="music icon"></i>天气查询</a>
-            <a href="#" th:href="@{/player}" class="m-item item m-mobile-hide" th:classappend="${n==7} ? active"><i class="music icon"></i>音乐播放</a>
-            <a href="#" th:href="@{/picture}" class="m-item item m-mobile-hide" th:classappend="${n==8} ? active"><i class="music icon"></i>相册</a>
+            <a href="#" th:href="@{/tempSearch}" class="m-item item m-mobile-hide" th:classappend="${n==6} ? active"><i class="chart bar icon"></i>天气查询</a>
+            <a href="#" th:href="@{/player}" class="m-item item m-mobile-hide" th:classappend="${n==7} ? active"><i class="volume up icon"></i>音乐播放</a>
+            <a href="#" th:href="@{/picture}" class="m-item item m-mobile-hide" th:classappend="${n==8} ? active"><i class="book icon"></i>相册</a>
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon input inverted transparent m-margin-tb-tiny">
@@ -57,29 +54,26 @@
                 <input type="image" src="../static/images/二维码.jpg" th:src="@{/images/二维码.jpg}" class="ui rounded image" style="width: 110px;"/>
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header m-text-spaced">最新博客</h4>
-                <div id="newblog-container">
-                <div class="ui inverted link list" th:fragment="newblogList">
-                    <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事 (User Story)</a>
-                    <!--/*-->
-                    <a href="#" class="item">用户故事 (User Story)</a>
-                    <a href="#" class="item">用户故事 (User Story)</a>
-                    <a href="#" class="item">用户故事 (User Story)</a>
-                    <!--*/-->
-                </div>
+                <h4 class="ui inverted header m-text-spaced">小组成员</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">张嘉祺</a>
+                    <a href="#" class="item">钱璞玉</a>
+                    <a href="#" class="item">张若鹏</a>
+                    <a href="#" class="item">王梦华</a>
+                    <a href="#" class="item">成笑莹</a>
                 </div>
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-spaced">联系我</h4>
                 <div class="ui inverted link list">
                     <a href="#" class="item">微信：714479723</a>
-                    <a href="#" class="item" th:text="#{index.qq}">QQ：714479723</a>
+                    <a href="#" class="item">QQ：714479723</a>
                     <a href="#" class="item">手机号码：18791307612</a>
                 </div>
             </div>
             <div class="seven wide column">
                 <h4 class="ui inverted header m-text-spaced">Blog</h4>
-                <p class="m-text-thin  m-opacity-mini" >这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助</p>
+                <p class="m-text-thin  m-opacity-mini" >这是我们组的项目-明煌博客系统！</p>
             </div>
         </div>
         <div class="ui inverted section divider"></div>
@@ -100,10 +94,6 @@
     </script>
     <script src="../static/js/snow.js" th:src="@{/js/snow.js}"></script>
     <script src="../static/js/click.js" th:src="@{/js/click.js}"></script>
-<!--    <script src="../static/lib/picture/js/jquery.min.js" th:src="@{/lib/picture/js/jquery.min.js}"></script>-->
-<!--    <script src="../static/lib/picture/js/jkresponsivegallery.js" th:src="@{/lib/picture/js/jkresponsivegallery.js}"></script>-->
-<!--    <script src="../static/lib/picture/js/ma5gallery.js" th:src="@{/lib/picture/js/ma5gallery.js}"></script>-->
-<!--    <script src="../static/lib/picture/js/functions.js" th:src="@{/lib/picture/js/functions.js}"></script>-->
 </th:block>
 </body>
 </html>
