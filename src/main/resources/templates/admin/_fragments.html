@@ -14,7 +14,7 @@
 </head>
 <body>
 <!-- 导航 -->
-<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small animated bounceInDown">
     <!-- 导航组件 -->
     <div class="ui container">
         <div class="ui inverted secondary stackable menu ">
@@ -22,8 +22,8 @@
             <a href="#" th:href="@{/admin/blogs}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>博客</a>
             <a href="#" th:href="@{/admin/types}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
             <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
-            <a href="#" th:href="@{/admin/user}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="tags icon"></i>账号</a>
-            <a href="#" th:href="@{/admin/pictures}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="tags icon"></i>相册</a>
+            <a href="#" th:href="@{/admin/user}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="blind icon"></i>账号</a>
+            <a href="#" th:href="@{/admin/pictures}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="book icon"></i>相册</a>
             <!-- 用户头像 -->
             <div class="right m-item m-mobile-hide menu">
                 <div class="ui dropdown item">
@@ -52,12 +52,13 @@
                 <input type="image" src="../static/images/二维码.jpg" th:src="@{/images/二维码.jpg}" class="ui rounded image" style="width: 110px;"/>
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header m-text-spaced">最新博客</h4>
+                <h4 class="ui inverted header m-text-spaced">小组成员</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">用户故事 (User Story)</a>
-                    <a href="#" class="item">用户故事 (User Story)</a>
-                    <a href="#" class="item">用户故事 (User Story)</a>
-                    <a href="#" class="item">用户故事 (User Story)</a>
+                    <a href="#" class="item">张嘉祺</a>
+                    <a href="#" class="item">钱璞玉</a>
+                    <a href="#" class="item">张若鹏</a>
+                    <a href="#" class="item">王梦华</a>
+                    <a href="#" class="item">成笑莹</a>
                 </div>
             </div>
             <div class="three wide column">
@@ -70,7 +71,7 @@
             </div>
             <div class="seven wide column">
                 <h4 class="ui inverted header m-text-spaced">Blog</h4>
-                <p class="m-text-thin  m-opacity-mini" >这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助</p>
+                <p class="m-text-thin  m-opacity-mini" >这是我们组的项目-明煌博客系统！</p>
             </div>
         </div>
         <div class="ui inverted section divider"></div>

@@ -28,6 +28,14 @@ public class SignController {
                          @RequestParam String nickname,
                          RedirectAttributes attributes,
                          Model model){
+        System.out.println("0.0");
+        
+
+        if (username.equals("")||password.equals("")){
+            System.out.println(username + password+"钱璞玉狠人！");
+            model.addAttribute("message","请完善信息！");
+            return "admin/login";
+        }
         User user1 = userService.checkSignUser(username,nickname);
         User user = new User();
         user.setUsername(username);

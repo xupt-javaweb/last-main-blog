@@ -23,7 +23,7 @@ import javax.validation.Valid;
 public class TypeController {
 
     @Autowired
-    private TypeService typeService;
+    private TypeService typeService ;
 
     @GetMapping("/types")
     /*注解是设置分页的默认值*/
@@ -48,14 +48,15 @@ public class TypeController {
         if(result.hasErrors()){
            return "admin/types - input";
        }
+        /*保存功能*/
         Type t =  typeService.saveType(type);
        /*未保存成功*/
        if (t==null){
-           attributes.addFlashAttribute("message","操作时报");
+           attributes.addFlashAttribute("message","操作失败");
        }else{
             attributes.addFlashAttribute("message","操作成功");
        }
-       return "redirect:/admin/types";
+       return "admin/types";
     }
     /*编辑分类*/
     /*通过id拿到要编辑的内容，跳转到types - input页面上，并且通过model.addAttribute方法填充分类的名称*/
@@ -64,7 +65,6 @@ public class TypeController {
         model.addAttribute(typeService.getType(id));
         return "admin/types - input";
     }
-
     /*更新分类*/
     @PostMapping("/types/{id}")
     public String editPost(@Valid Type type,BindingResult result,@PathVariable Long id,RedirectAttributes attributes){
@@ -81,14 +81,14 @@ public class TypeController {
         }else{
             attributes.addFlashAttribute("message","更新成功");
         }
-        return "redirect:/admin/types";
+        return "admin/types";
     }
 
     @GetMapping("/types/{id}/delete")
     public String delete(@PathVariable Long id,RedirectAttributes attributes){
         typeService.deletedType(id);
         attributes.addFlashAttribute("message","删除成功");
-        return "redirect:/admin/types";
+        return "admin/types";
     }
 
 }
