@@ -71,7 +71,7 @@
                 <br>
                 <div class="ui left labeled input">
                     <label class="ui teal basic label">邮箱</label>
-                    <input type="text" name="email" placeholder="邮箱" th:value="*{email}">
+                    <input type="text" name="email" id="user-input-email" placeholder="邮箱" th:value="*{email}">
                 </div>
             </div>
 
@@ -83,6 +83,7 @@
                 <p th:errors="*{username}">提交信息不符合规则</p>
             </div>
              /*/-->
+            <div id="user-input-error-message" style="color:orangered;transform: translateX(300px);"></div>
             <div class="ui right aligned container">
                 <button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
                 <button class="ui teal submit button">提交</button>
@@ -155,6 +156,25 @@
                 }]
             }
         }
+    });
+    $(function (){
+        //校验邮箱
+        function checkEmail() {
+            //1.获取邮箱
+            var email = $("#user-input-email").val();
+            //2.定义正则		itcast@163.com
+            var reg_email = /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/;
+            //3.判断
+            var flag = reg_email.test(email);
+            if (flag) {
+
+            } else {
+                $("#user-input-error-message").html("邮箱格式错误，请重新输入");
+                $("#user-input-email").css("border", "1px solid red");
+            }
+            return flag;
+        }
+        $("#user-input-email").blur(checkEmail);
     });
 
 </script>
